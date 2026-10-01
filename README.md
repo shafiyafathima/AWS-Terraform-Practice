@@ -235,6 +235,7 @@ Terraform state files can contain important information about infrastructure and
 
 Therefore, this repository ignores:
 
+```text
 .terraform/
 *.tfstate
 *.tfstate.*
@@ -242,15 +243,17 @@ Therefore, this repository ignores:
 *.plan
 crash.log
 crash.*.log
+```
 
-The .terraform.lock.hcl file is not ignored and is committed to the repository.
+The ```text terraform.lock.hcl ``` file is not ignored and is committed to the repository.
 
-The terraform.tfvars files in this practice repository contain dummy values for learning and demonstration purposes.
+The ```text terraform.tfvars ``` files in this practice repository contain dummy values for learning and demonstration purposes.
 
 Important: Real production credentials, passwords, access keys, secrets, or client-sensitive information should never be stored in a public GitHub repository.
 
 # 🎯 Project Objective
-The main objective of this project is to build practical knowledge of Terraform + AWS Infrastructure as Code.
+
+The main objective of this project is to build practical knowledge of **Terraform + AWS Infrastructure as Code.**
 
 This project helps demonstrate how AWS infrastructure can be:
 
