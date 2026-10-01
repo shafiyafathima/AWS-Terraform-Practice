@@ -134,8 +134,9 @@ This file is normally committed to the Git repository so that Terraform uses con
 Prevents Terraform-generated files and state files from being committed to GitHub.
 
 
-Examples:
+### Examples
 
+```text
 .terraform/
 *.tfstate
 *.tfstate.*
@@ -143,11 +144,15 @@ Examples:
 *.plan
 crash.log
 crash.*.log
+```
+
 
 
 # 🔄 Terraform Workflow
+
 The general Terraform workflow used in this project is:
 
+```text
 Write Terraform Configuration
           ↓
 terraform init
@@ -161,6 +166,8 @@ terraform plan
 terraform apply
           ↓
 AWS Resources Created
+```
+
 
 # Common Terraform Commands
 
