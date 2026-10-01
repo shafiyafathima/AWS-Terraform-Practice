@@ -173,27 +173,39 @@ AWS Resources Created
 
 Initialize the Terraform working directory:
 
+```text
 terraform init
+```
 
 Format Terraform configuration files:
 
+```text
 terraform fmt
+```
 
 Validate the Terraform configuration:
 
+```text
 terraform validate
+```
 
 Create an execution plan:
 
+```text
 terraform plan
+```
 
 Create the AWS resources:
 
+```text
 terraform apply
+```
 
 Destroy practice resources when they are no longer required:
 
+```text
 terraform destroy
+```
 
 # 🧩 Terraform Concepts Practiced
 This repository demonstrates hands-on practice with:
