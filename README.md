@@ -7,7 +7,10 @@ The purpose of this project is to provision and manage AWS infrastructure using 
 
 This project demonstrates Terraform fundamentals including resource creation, variables, outputs, networking, security, virtual machines, storage, databases, and load balancing.
 
+---
+
 ## 🛠️ Technologies Used
+
 
 * **AWS**
 * **Terraform**
@@ -16,6 +19,7 @@ This project demonstrates Terraform fundamentals including resource creation, va
 * **GitHub**
 * **Visual Studio Code**
 
+---
 
 # ☁️ AWS Resources
 The following AWS resources are included in this practice repository:
@@ -31,6 +35,9 @@ The following AWS resources are included in this practice repository:
 | 5     | **AWS Security Group**                 | Network security rules for controlling traffic       |
 | 6     | **AWS Load Balancer**                  | Distributes network traffic across backend resources |
 | 7     | **AWS RDS**                            | RDS infrastructure provisioned using Terraform       |
+
+
+---
 
 # 📂 Repository Structure
 
@@ -96,6 +103,7 @@ AWS-Terraform-Practice/
 └── .gitignore
 ```
 
+---
 
 # 📄 Terraform File Description
 
@@ -146,7 +154,7 @@ crash.log
 crash.*.log
 ```
 
-
+---
 
 # 🔄 Terraform Workflow
 
@@ -168,6 +176,7 @@ terraform apply
 AWS Resources Created
 ```
 
+---
 
 # Common Terraform Commands
 
@@ -207,6 +216,8 @@ Destroy practice resources when they are no longer required:
 terraform destroy
 ```
 
+---
+
 # 🧩 Terraform Concepts Practiced
 This repository demonstrates hands-on practice with:
 
@@ -230,6 +241,8 @@ This repository demonstrates hands-on practice with:
 - GitHub
 - AWS CLI
 
+---
+
 # 🔐 State File and Security
 Terraform state files can contain important information about infrastructure and should not normally be committed to a public repository.
 
@@ -251,6 +264,7 @@ The ```text terraform.tfvars ``` files in this practice repository contain dummy
 
 > <sub><em>**Important:** Real production credentials, passwords, access keys, secrets, or client-sensitive information should never be stored in a public GitHub repository.</em></sub>
 
+---
 
 # 🎯 Project Objective
 
@@ -265,7 +279,7 @@ This project helps demonstrate how AWS infrastructure can be:
 * Managed using Infrastructure as Code (IaC)
 * Version-controlled using Git and GitHub
 
-
+---
 
 # 🚀 Future Enhancements
 Planned improvements include:
@@ -280,6 +294,7 @@ Planned improvements include:
 * Automated Terraform plan and apply pipelines
 * Infrastructure deployment through CI/CD
 
+---
 
 # 📚 Learning Outcome
 Through this project, I am developing practical experience in:
