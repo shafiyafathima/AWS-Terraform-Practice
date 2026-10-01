@@ -99,32 +99,40 @@ AWS-Terraform-Practice/
 
 # 📄 Terraform File Description
 
-# main.tf
+### `main.tf`
+
 Contains the Terraform resource configuration used to create AWS infrastructure.
 
-# provider.tf
+### `provider.tf`
+
 Contains the Terraform provider configuration.
 
 The AWS provider is used to allow Terraform to communicate with Amazon Web Services (AWS) and manage AWS resources.
 
-# variables.tf
+### `variables.tf`
+
 Defines the input variables used by the Terraform configuration.
 
-# terraform.tfvars
+### `terraform.tfvars`
+
 Contains the actual values assigned to the Terraform variables.
 
 The values used in this practice repository are dummy/practice values for learning and demonstration purposes.
 
-# output.tf
+### `output.tf`
+
 Defines the output values that Terraform displays after resources are created, such as resource IDs, IP addresses, names, or other useful information.
 
-# .terraform.lock.hcl
+### `.terraform.lock.hcl`
+
 Locks the selected Terraform provider versions and their dependency checksums.
 
 This file is normally committed to the Git repository so that Terraform uses consistent provider versions across environments.
 
-# .gitignore
+### `.gitignore`
+
 Prevents Terraform-generated files and state files from being committed to GitHub.
+
 
 Examples:
 
