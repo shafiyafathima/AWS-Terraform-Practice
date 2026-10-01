@@ -31,6 +31,8 @@ The following AWS resources are included in this practice repository:
 | 7     | **AWS RDS**                            | RDS infrastructure provisioned using Terraform       |
 
 # 📂 Repository Structure
+
+```text
 AWS-Terraform-Practice/
 │
 ├── AWS-Instance-With-Public-IP/
