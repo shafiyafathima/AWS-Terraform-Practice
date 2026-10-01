@@ -1,7 +1,7 @@
 # AWS-Terraform-Practice
 
 # Project Overview
-This repository contains my hands-on practice with Terraform and AWS.
+This repository contains my hands-on practice with **Terraform** and **AWS**.
 
 The purpose of this project is to provision and manage AWS infrastructure using Infrastructure as Code (IaC) with Terraform instead of creating resources manually through the AWS Portal.
 
