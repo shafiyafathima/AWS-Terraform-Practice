@@ -3,17 +3,19 @@
 # Project Overview
 This repository contains my hands-on practice with **Terraform** and **AWS**.
 
-The purpose of this project is to provision and manage AWS infrastructure using Infrastructure as Code (IaC) with Terraform instead of creating resources manually through the AWS Portal.
+The purpose of this project is to provision and manage AWS infrastructure using **Infrastructure as Code (IaC)** with Terraform instead of creating resources manually through the AWS Portal.
 
 This project demonstrates Terraform fundamentals including resource creation, variables, outputs, networking, security, virtual machines, storage, databases, and load balancing.
 
-# 🛠️ Technologies Used
-AWS
-Terraform
-AWS CLI
-Git
-GitHub
-Visual Studio Code
+## 🛠️ Technologies Used
+
+* **AWS**
+* **Terraform**
+* **AWS CLI**
+* **Git**
+* **GitHub**
+* **Visual Studio Code**
+
 
 # ☁️ AWS Resources
 The following AWS resources are included in this practice repository:
