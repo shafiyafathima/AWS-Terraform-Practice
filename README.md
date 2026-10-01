@@ -92,6 +92,7 @@ AWS-Terraform-Practice/
 │   └── variables.tf
 │
 └── .gitignore
+```
 
 
 # 📄 Terraform File Description
