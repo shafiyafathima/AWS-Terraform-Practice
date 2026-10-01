@@ -249,7 +249,8 @@ The ```text terraform.lock.hcl ``` file is not ignored and is committed to the r
 
 The ```text terraform.tfvars ``` files in this practice repository contain dummy values for learning and demonstration purposes.
 
-Important: Real production credentials, passwords, access keys, secrets, or client-sensitive information should never be stored in a public GitHub repository.
+> <sub><em>**Important:** Real production credentials, passwords, access keys, secrets, or client-sensitive information should never be stored in a public GitHub repository.</em></sub>
+
 
 # 🎯 Project Objective
 
@@ -257,30 +258,33 @@ The main objective of this project is to build practical knowledge of **Terrafor
 
 This project helps demonstrate how AWS infrastructure can be:
 
-Defined using Terraform
-Provisioned automatically
-Configured using variables
-Validated and planned before deployment
-Managed using Infrastructure as Code
-Version-controlled using Git and GitHub
+* Defined using Terraform
+* Provisioned automatically
+* Configured using variables
+* Validated and planned before deployment
+* Managed using Infrastructure as Code (IaC)
+* Version-controlled using Git and GitHub
+
 
 
 # 🚀 Future Enhancements
 Planned improvements include:
 
-Reusable Terraform modules
-Multiple AWS Instances
-Instance with different operating systems
-Instance deployed in different AWS regions
-Remote Terraform backend using AWS Storage
-Terraform with GitHub
-Jenkins CI/CD integration
-Automated Terraform plan and apply pipelines
-Infrastructure deployment through CI/CD
+* Reusable Terraform modules
+* Multiple AWS instances
+* Instances with different operating systems
+* Instances deployed in different AWS regions
+* Remote Terraform backend using AWS storage
+* Terraform with GitHub
+* Jenkins CI/CD integration
+* Automated Terraform plan and apply pipelines
+* Infrastructure deployment through CI/CD
+
 
 # 📚 Learning Outcome
 Through this project, I am developing practical experience in:
 
+```text
 AWS
   ↓
 Terraform
@@ -292,8 +296,9 @@ Git
 GitHub
   ↓
 CI/CD
+```
 
-This repository represents my hands-on practice and continuous learning in AWS Cloud, Terraform, Infrastructure as Code, and DevOps.
+This repository represents my hands-on practice and continuous learning in **AWS Cloud, Terraform, Infrastructure as Code, and DevOps.**
 
 
 
