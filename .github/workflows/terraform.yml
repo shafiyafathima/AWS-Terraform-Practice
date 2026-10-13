@@ -1,4 +1,3 @@
-```yaml
 name: Terraform Deployment
 
 'on':
@@ -61,4 +60,3 @@ jobs:
       - name: Terraform Apply
         working-directory: ${{ github.workspace }}/${{ inputs.terraform_folder }}
         run: terraform apply -input=false -auto-approve
-```
