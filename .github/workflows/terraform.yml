@@ -9,7 +9,7 @@ name: Terraform Deployment
         type: choice
         options:
           - AWS-EC2-Instance-with-PublicIP
-          - AWS-EC2-Instance-without-PublicIP
+          - AWS-EC2-Instance-without-Public-IP
           - AWS-VPC
           - AWS-S3
           - AWS-Security-Group
