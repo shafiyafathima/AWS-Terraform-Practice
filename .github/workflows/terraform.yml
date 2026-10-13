@@ -8,8 +8,8 @@ name: Terraform Deployment
         required: true
         type: choice
         options:
-          - AWS-EC2-Instance-With-Public-IP
-          - AWS-EC2-Instance-Without-Public-IP
+          - AWS-EC2-Instance-With-PublicIP
+          - AWS-EC2-Instance-Without-PublicIP
           - AWS-VPC
           - AWS-S3
           - AWS-Security-Group
