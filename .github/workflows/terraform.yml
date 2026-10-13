@@ -1,0 +1,64 @@
+```yaml
+name: Terraform Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      terraform_folder:
+        description: Select the AWS Terraform resource to deploy
+        required: true
+        type: choice
+        options:
+          - AWS-Instance-With-Public-IP
+          - AWS-Instance-Without-Public-IP
+          - AWS-VPC
+          - AWS-S3
+          - AWS-Security-Group
+          - AWS-Load-Balancer
+          - AWS-RDS
+
+permissions:
+  contents: read
+
+jobs:
+  terraform:
+    name: Deploy AWS Infrastructure
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Verify AWS Identity
+        run: aws sts get-caller-identity
+
+      - name: Terraform Init
+        working-directory: ${{ github.workspace }}/${{ inputs.terraform_folder }}
+        run: terraform init -input=false
+
+      - name: Terraform Format Check
+        working-directory: ${{ github.workspace }}/${{ inputs.terraform_folder }}
+        run: terraform fmt -check -recursive
+
+      - name: Terraform Validate
+        working-directory: ${{ github.workspace }}/${{ inputs.terraform_folder }}
+        run: terraform validate
+
+      - name: Terraform Plan
+        working-directory: ${{ github.workspace }}/${{ inputs.terraform_folder }}
+        run: terraform plan -input=false
+
+      - name: Terraform Apply
+        working-directory: ${{ github.workspace }}/${{ inputs.terraform_folder }}
+        run: terraform apply -input=false -auto-approve
+```
