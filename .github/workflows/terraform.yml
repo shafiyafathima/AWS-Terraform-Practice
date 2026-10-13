@@ -1,7 +1,7 @@
 ```yaml
 name: Terraform Deployment
 
-on:
+'on':
   workflow_dispatch:
     inputs:
       terraform_folder:
